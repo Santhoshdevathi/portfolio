@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a09a308bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/cv.png" alt="" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>  
+                    <i class="fa-solid fa-xmark fas" onclick="closeMenu()"></i>           
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I am <span>Santhosh</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------- About------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mypic6.jpg"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>🎓 I’ve recently completed my Master of Computer Applications (MCA) from Acharya Nagarjuna University with an 8.5 CGPA, graduating in 2025. I’m currently seeking an opportunity as a Software Development Engineer (SDE) or Full-Stack Developer.<br><br>
+
+                    💻 I’ve acquired strong technical skills in Java, Python, Spring Boot, React, MySQL, and Data Structures & Algorithms. I’ve also built real-time projects, including a full-stack authentication system using Spring Boot and React, where I implemented JWT-based login and welcome email functionality.<br><br>
+
+                    🚀 As a passionate and quick learner, I’m eager to contribute to a growth-oriented organization, apply my skills to real-world challenges, and continuously improve as a developer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>HTML, CSS, React, Bootstrap</li>
+                            <li><span>Backend</span><br>Java, Python, Sping boot, DSA</li>
+                            <li><span>Database</span><br>Mysql, MongoDB</li>
+                            <li><span>Tools</span><br>Vs Code, Git, Eclipse</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>Fresher</li>
+                            <li><span>Current</span><br>Completed Master of Computer Applications at Acharya Nagarjuna University with aggreagete of 8.5 CGPA.</li>
+                            <li><span>Current</span><br>Aspiring Software Development Engineer with strong skills in Java, Spring Boot, React, and full-stack web development. Seeking an opportunity to apply problem-solving abilities and coding expertise in a growth-oriented company to build scalable and efficient software solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2025</span><br>Master of Computer Applications(MCA) from Acharya Nagarjuna University</li>
+                            <li><span>2020 - 2023</span><br>Bachelor of Computer Science(BSc) from Yogi Vemana University</li>
+                            <li><span>2018 - 2020</span><br>Intermediate(MPC)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------Services------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web designing</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo blanditiis, quia id eius nulla, libero error reiciendis ab harum obcaecati dolores autem, fugiat esse voluptatum. Quod id ullam saepe quas.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Designing</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo blanditiis, quia id eius nulla, libero error reiciendis ab harum obcaecati dolores autem, fugiat esse voluptatum. Quod id ullam saepe quas.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo blanditiis, quia id eius nulla, libero error reiciendis ab harum obcaecati dolores autem, fugiat esse voluptatum. Quod id ullam saepe quas.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------portfolio------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Authify.png"/>
+                <div class="layer">
+                    <h3>Authentication System</h3>
+                    <p>Built using Spring boot and React.Provides features of Registration abd login.</p>
+                    <a href="https://www.linkedin.com/posts/santhoshdevathi67_springboot-reactjs-jwt-activity-7334523660273098752-zQ5v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKj59gBxAqbq341du8UotvO8FRrvsevBcw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/tracking.png"/>
+                <div class="layer">
+                    <h3>Mobile Tracking System</h3>
+                    <p>Tracks your mobile location.Built using Python.</p>
+                    <a href="https://www.linkedin.com/posts/santhoshdevathi67_geolocationabrtracker-python-django-activity-7255155052435095554-Awka?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKj59gBxAqbq341du8UotvO8FRrvsevBcw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/paper.png"/>
+                <div class="layer">
+                    <h3>Rock Paper Scissors Game</h3>
+                    <p>Tracks your and computer score and declare the winnner.</p>
+                    <a href="https://www.linkedin.com/posts/santhoshdevathi67_todolist-calculator-passwordgenerator-activity-7232402474739900416--sVe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKj59gBxAqbq341du8UotvO8FRrvsevBcw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/hangman.png"/>
+                <div class="layer">
+                    <h3>Hangman Game</h3>
+                    <p>Guess the correct word and save the life of Hang man.</p>
+                    <a href="https://www.linkedin.com/posts/santhoshdevathi67_hangmanabrgame-python-django-activity-7244736253475069955-AknK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKj59gBxAqbq341du8UotvO8FRrvsevBcw"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">See more</a>
+    </div>
+</div>
+
+<!------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>devathisanthosh67@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9010319522</p>
+                <div class="social-icons">
+                    <a target="_blank" href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/santhosh_awaiter_of_a_girl"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/santhoshdevathi67"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/Santhoshdevathi"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Santhosh_Developer@2025.pdf" target="_blank" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Santhosh. Made with <i class="fa-solid fa-heart"></i> Easy Tutorials</p>
+    </div>
+</div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw0Gi8qxakCkLekW4P2pZLx-sFNdowoDDFPOc_plAG7kpilo9KZC5V6cMzo1wwzEnQr/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully";
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
